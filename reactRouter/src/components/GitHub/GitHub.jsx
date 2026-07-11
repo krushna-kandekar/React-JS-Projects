@@ -3,6 +3,9 @@ import { useLoaderData } from "react-router-dom";
 
 function GitHub() {
   const data = useLoaderData();
+
+  // lading API 1st Approch (without optimized)
+
   //   const [data, setData] = useState([]);
   //   useEffect(() => {
   //     fetch("https://api.github.com/users/krushna-kandekar")
@@ -27,6 +30,7 @@ function GitHub() {
 
 export default GitHub;
 
+// lading API 2st Approch (with optimized)
 export const githubInfoLoader = async () => {
   const responce = await fetch("https://api.github.com/users/krushna-kandekar");
   return responce.json();

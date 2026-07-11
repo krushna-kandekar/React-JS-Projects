@@ -16,6 +16,7 @@ import Contact from "./components/Contact/Contact.jsx";
 import User from "./components/User/User.jsx";
 import GitHub, { githubInfoLoader } from "./components/GitHub/GitHub.jsx";
 
+// Router creation 1st way
 // const router = createBrowserRouter([
 //   {
 //     path: "/",
@@ -37,6 +38,7 @@ import GitHub, { githubInfoLoader } from "./components/GitHub/GitHub.jsx";
 //   },
 // ]);
 
+// Router creation 2 st way
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
